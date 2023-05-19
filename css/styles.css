@@ -298,3 +298,10 @@ footer {
   height: 30px;
   margin: 0 5px; /* Add some spacing between icons */
 }
+
+/* Button */
+
+.button{
+  width: 40%;
+  margin-left: 7rem;
+}
