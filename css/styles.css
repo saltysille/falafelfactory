@@ -1,10 +1,10 @@
 /* General */
 
-body{
+body {
   background-color: #E4F3E4;
-    max-width: 1800px;
-    margin: 0 auto;
-    font-family: 'now', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 1800px;
+  margin: 0 auto;
+  font-family: 'now', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -131,7 +131,7 @@ nav {
 
 /* Headings */
 
-.h1_frontpage{
+.h1_frontpage {
   font-size: 104px;
   color: #fff;
   text-transform: uppercase;
@@ -139,7 +139,7 @@ nav {
   font-family: 'now', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.h2_frontpage{
+.h2_frontpage {
   font-family: 'now', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-left: 7rem;
   line-height: 1.6;
@@ -147,104 +147,104 @@ nav {
   margin-bottom: 5rem;
 }
 
-.tagline_frontpage{
+.tagline_frontpage {
   width: 50%;
 }
 
 
 /* Video */
 
-.video-frontpage{
+.video-frontpage {
   width: 100%;
   display: block;
-  
+
 }
 
 /* Images */
 
-.img_frontpage{
+.img_frontpage {
   align-self: stretch;
-        width: 100%;
-        display: block;
-        margin-bottom: 5rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 5rem;
 }
 
 
 
 /* Grids */
 
-.wrapper{
+.wrapper {
   display: grid;
   place-items: center;
 }
 
-.wrapper2{
+.wrapper2 {
   display: grid;
   grid-gap: 0.5rem;
   margin-left: 7rem;
   margin-right: 7rem;
-  
+
 }
 
 
 @media screen and (min-width: 768px) {
 
-  .wrapper{
+  .wrapper {
     display: grid;
-  grid-template-columns: repeat(4, 1fr);
-        
-}
+    grid-template-columns: repeat(4, 1fr);
 
-.box-1{
-  grid-column-start: -1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  z-index: -1;
-}
+  }
 
-.box-2{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  z-index: 1;
-}
+  .box-1 {
+    grid-column-start: -1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: -1;
+  }
 
-.box-3{
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  z-index: 1;
-}
+  .box-2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 1;
+  }
 
-.box-3-2{
-  
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  z-index: 1;
-}
+  .box-3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 1;
+  }
 
-.box-3-3{
- 
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  z-index: 1;
-}
+  .box-3-2 {
 
-.box-3-4{
- 
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  z-index: 1;
-}
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 1;
+  }
+
+  .box-3-3 {
+
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 1;
+  }
+
+  .box-3-4 {
+
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 1;
+  }
 
 }
 
@@ -261,19 +261,21 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .footer-column {
   flex: 1;
-  padding: 20px; /* Add padding */
-  border: 0.5px solid #000; /* Add border */
+  padding: 20px;
+  /* Add padding */
+  border: 0.5px solid #000;
+  /* Add border */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 1.5;
-  
+
 }
 
 .footer-column p {
@@ -281,27 +283,33 @@ footer {
 }
 
 .logo {
-  width: 200px; /* Adjust the size as needed */
+  width: 200px;
+  /* Adjust the size as needed */
   height: 200px;
-  display: block; /* Ensure centering with margin */
-  margin: 0 auto; /* Center horizontally */
+  display: block;
+  /* Ensure centering with margin */
+  margin: 0 auto;
+  /* Center horizontally */
 }
 
 .icon-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Add some spacing between logo and icons */
+  margin-top: 10px;
+  /* Add some spacing between logo and icons */
 }
 
 .icon {
-  width: 30px; /* Adjust the size as needed */
+  width: 30px;
+  /* Adjust the size as needed */
   height: 30px;
-  margin: 0 5px; /* Add some spacing between icons */
+  margin: 0 5px;
+  /* Add some spacing between icons */
 }
 
 /* Button */
 
-.button{
+.button {
   width: 40%;
   margin-left: 7rem;
 }
