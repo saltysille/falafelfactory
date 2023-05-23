@@ -1,5 +1,4 @@
 /* General */
-
 body {
   background-color: #d2e5c6;
   max-width: 1800px;
@@ -175,7 +174,7 @@ footer {
   margin: 0 10px; /* Add some spacing between icons */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .footer-content {
     max-width: 1800px;
     margin: 0 auto;
@@ -217,20 +216,20 @@ footer {
   }
 }
 /* Main */
+@media screen and (min-width: 800px) {
+  .grid_1-1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+  }
 
-.grid_1-1 {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 30px;
+  .img_galleri {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
 }
-
-.img_galleri {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
 /* Images */
 
 .logo img {
