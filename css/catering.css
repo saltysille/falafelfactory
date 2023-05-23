@@ -313,7 +313,7 @@ h3 {
 .image-text {
   margin-top: 10px;
   white-space: pre-line;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: 18px;
 }
 
@@ -329,6 +329,23 @@ h3 {
   gap: 20px;
   padding-left: 150px;
   padding-right: 150px;
+  line-height: 1.5;
+}
+
+.levering {
+  padding-left: 150px;
+  padding-right: 500px;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+
+.spørgsmål {
+  padding-left: 1050px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.kontakt_button {
+  width: 50%;
 }
 
 /* Button */
