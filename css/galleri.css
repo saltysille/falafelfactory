@@ -225,6 +225,12 @@ footer {
   padding-top: 30px;
 }
 
+.img_galleri {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 /* Images */
 
 .logo img {
