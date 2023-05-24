@@ -216,6 +216,32 @@ footer {
   }
 }
 /* Main */
+.grid_1-1 {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  padding-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+  
+  .img_galleri {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+  margin: 5%;
+  }
+
+  .img_galleri img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grid_1-1 img {
+    max-width: 50%;
+    height: auto;
+  }
+
 @media screen and (min-width: 800px) {
   .grid_1-1 {
     display: flex;
