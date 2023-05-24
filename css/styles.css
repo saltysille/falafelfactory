@@ -152,10 +152,21 @@ nav {
 
 /* Headings */
 
+.heading_menu_first{
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2f306d;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
 .heading_menu{
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 4.5rem;
 }
 
 .heading_pita{
