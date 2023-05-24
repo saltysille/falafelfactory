@@ -262,7 +262,7 @@ h3 {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .h1 {
     font-size: 77px;
     color: #2f306d;
@@ -291,7 +291,6 @@ h3 {
 }
 
 /* grid */
-
 .container {
   text-align: center;
   padding: 20px 20px;
@@ -323,29 +322,31 @@ h3 {
   width: 30px;
 }
 
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-  padding-left: 150px;
-  padding-right: 150px;
-  line-height: 1.5;
-}
+@media screen and (min-width: 800px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 1.5;
+  }
 
-.levering {
-  padding-left: 150px;
-  padding-right: 500px;
-  padding-top: 15px;
-  line-height: 1.5;
-}
+  .levering {
+    padding-left: 150px;
+    padding-right: 500px;
+    padding-top: 15px;
+    line-height: 1.5;
+  }
 
-.spørgsmål {
-  padding-left: 1050px;
-  padding-top: 10px;
-  padding-bottom: 40px;
-}
-.kontakt_button {
-  width: 50%;
+  .spørgsmål {
+    padding-left: 1050px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .kontakt_button {
+    width: 50%;
+  }
 }
 
 /* Button */
