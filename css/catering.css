@@ -322,21 +322,29 @@ h3 {
   width: 30px;
 }
 
-.grid_2-1 {
+.bestilling {
   padding-left: 20px;
   padding-right: 20px;
+}
+.betaling {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
 }
 .levering {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
 }
 
 .spørgsmål {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
 }
 .kontakt_button {
   width: 50%;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 800px) {
   .grid_2-1 {
