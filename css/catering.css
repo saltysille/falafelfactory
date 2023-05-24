@@ -73,7 +73,7 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-  margin-left: 20rem;
+  margin-left: 5rem;
 }
 
 .burger .line {
@@ -227,7 +227,7 @@ footer {
   height: 200px;
   margin: 0 auto;
   position: absolute;
-  top: 2rem;
+  top: -3rem;
   left: 0rem;
 }
 
@@ -290,6 +290,8 @@ h3 {
   .tagline_frontpage {
     width: 50%;
   }
+  .logo img {
+    width: 181%;
 }
 
 /* grid */
@@ -416,4 +418,5 @@ h3 {
     border-top: 1px solid#2f306d; /* Adjust the line color and thickness as needed */
     margin: 120px 100px; /* Adjust the margin as needed */
   }
+}
 }
