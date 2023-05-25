@@ -196,3 +196,55 @@ footer {
 }
 
 /* Images */
+
+.bror {
+    width: 29%;
+    height: auto;
+    left: 10%;
+    position: relative;
+    margin-top: 26px;
+}
+
+/* Headers */
+
+.h1 {
+    margin-left: 516px;
+    margin-top: -39px;
+}
+
+h2 {
+    color: #DB405D;
+}
+
+
+/* Tekst */
+
+.præg {
+    margin-left: 43%;
+    position: relative;
+    margin-top: -36%;
+    margin-bottom: 35%;
+}
+
+.vision {
+    position: relative;
+    margin-bottom: 4%;
+}
+
+.vision-mission-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.vision,
+.mission {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.vision img,
+.mission img {
+    width: 11%;
+    height: auto;
+}
