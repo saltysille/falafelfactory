@@ -295,133 +295,132 @@ h3 {
   }
 
   .logo {
-    top: -3rem
+    top: -3rem;
   }
 }
 
-  /* grid */
-  .container {
-    text-align: center;
-    padding: 20px 20px;
-  }
+/* grid */
+.container {
+  text-align: center;
+  padding: 20px 20px;
+}
 
-  .image-wrapper {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-  }
-  .image-wrapper:first-child {
-    margin-right: 50px;
-  }
-  .image-wrapper img {
-    width: 300px;
-    height: auto;
-  }
+.image-wrapper {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+.image-wrapper:first-child {
+  margin-right: 50px;
+}
+.image-wrapper img {
+  width: 300px;
+  height: auto;
+}
 
-  .image-text {
-    margin-top: 10px;
-    white-space: pre-line;
+.image-text {
+  margin-top: 10px;
+  white-space: pre-line;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.container::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+}
+
+.bestilling {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.betaling {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.levering {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.spørgsmål {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.kontakt_button {
+  width: 50%;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 800px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
     line-height: 1.5;
-    font-size: 18px;
   }
 
-  .container::after {
-    content: "";
-    display: inline-block;
-    width: 30px;
-  }
-
-  .bestilling {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .betaling {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-  }
   .levering {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
+    padding-left: 170px;
+    padding-right: 500px;
+    padding-top: 15px;
+    line-height: 1.5;
   }
 
   .spørgsmål {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1050px;
     padding-top: 10px;
+    padding-bottom: 40px;
   }
   .kontakt_button {
     width: 50%;
-    padding-bottom: 20px;
   }
-  @media screen and (min-width: 800px) {
-    .grid_2-1 {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 20px;
-      padding-left: 150px;
-      padding-right: 150px;
-      line-height: 1.5;
-    }
+}
 
-    .levering {
-      padding-left: 150px;
-      padding-right: 500px;
-      padding-top: 15px;
-      line-height: 1.5;
-    }
+/* Button */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  width: 80%;
+  padding-left: 10%;
+}
 
-    .spørgsmål {
-      padding-left: 1050px;
-      padding-top: 10px;
-      padding-bottom: 40px;
-    }
-    .kontakt_button {
-      width: 50%;
-    }
-  }
-
-  /* Button */
+@media screen and (min-width: 800px) {
   .button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    width: 80%;
-    padding-left: 10%;
   }
+}
 
-  @media screen and (min-width: 800px) {
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 50px;
-    }
-  }
-
-  /* line */
+/* line */
+.line-container {
+  display: flex;
+  justify-content: center;
+}
+.horizontal-line {
+  width: 100%; /* Adjust the width of the line as needed */
+  border: none;
+  border-top: 1px solid#2f306d; /* Adjust the line color and thickness as needed */
+  margin: 120px 10px; /* Adjust the margin as needed */
+}
+@media screen and (min-width: 800px) {
   .line-container {
     display: flex;
     justify-content: center;
   }
   .horizontal-line {
-    width: 100%; /* Adjust the width of the line as needed */
+    width: 80%; /* Adjust the width of the line as needed */
     border: none;
     border-top: 1px solid#2f306d; /* Adjust the line color and thickness as needed */
-    margin: 120px 10px; /* Adjust the margin as needed */
+    margin: 120px 100px; /* Adjust the margin as needed */
   }
-  @media screen and (min-width: 800px) {
-    .line-container {
-      display: flex;
-      justify-content: center;
-    }
-    .horizontal-line {
-      width: 80%; /* Adjust the width of the line as needed */
-      border: none;
-      border-top: 1px solid#2f306d; /* Adjust the line color and thickness as needed */
-      margin: 120px 100px; /* Adjust the margin as needed */
-    }
-  }
-
+}
