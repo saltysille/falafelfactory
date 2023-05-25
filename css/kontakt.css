@@ -121,7 +121,7 @@ nav {
   }
 
   nav {
-    margin-left: 12rem;
+    margin-left: 0rem;
   }
 
   .menu {
@@ -162,6 +162,7 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
+  
 }
 /* grid_1 */
 .grid_1 {
@@ -313,10 +314,20 @@ footer {
 }
 
 .logo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   position: absolute;
   top: 2rem;
   left: 0rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: 181%;
+  }
+
+  .logo {
+    top: -3rem;
+  }
 }
