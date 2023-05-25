@@ -57,6 +57,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  padding-left: 300px;
 }
 
 .menu {
@@ -94,7 +95,7 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-  margin-left: 20rem;
+  margin-left: 5rem;
 }
 
 .burger .line {
@@ -107,6 +108,11 @@ nav {
 .burger {
   display: none;
 }
+.button_header {
+  display: flex;
+  scale: 0.5;
+}
+
 @media screen and (max-width: 800px) {
   header {
     display: flex;
@@ -121,7 +127,7 @@ nav {
   }
 
   nav {
-    margin-left: 0rem;
+    margin-left: 12rem;
   }
 
   .menu {
@@ -162,7 +168,9 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
-  
+  .button_header {
+    display: none;
+  }
 }
 /* grid_1 */
 .grid_1 {
