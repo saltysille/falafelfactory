@@ -11,6 +11,7 @@
   margin-top: 6%;
   margin-bottom: 3%;
 }
+
 .kontaktosform {
   display: grid;
   grid-template-rows: auto;
@@ -116,5 +117,52 @@ input[type="submit"] {
 
   .logo {
     top: -1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid_1 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 800px) {
+  /* form */
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 27px;
+    margin-left: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bigger-label {
+    padding: 40px;
+    border-radius: 25px;
+    width: 90%;
+  }
+
+  .navnegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  iframe {
+    width: auto;
+    height: 160%;
+  }
+}
+@media (max-width: 800px) {
+  .grid_1form {
+    margin-top: 22%;
+  }
+  .kontaktostekst {
+    margin-top: 150px;
+    margin-bottom: 45px;
   }
 }
