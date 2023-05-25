@@ -561,10 +561,30 @@ footer {
   /* Add some spacing between icons */
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid#2f306d;
+  margin: 120px 10px;
+}
+
+
 @media screen and (min-width: 768px) {
 
   .heading_footer{
     padding-top:97px;
+    margin-top: 0;
 
   }
 
@@ -574,6 +594,7 @@ footer {
 
   .heading_openinghour{
     padding-top:121px;
+    margin-top: 0;
   }
 
   .contact_openinghour{
@@ -621,8 +642,6 @@ footer {
   }
 
   .icon-container {
-    display: flex;
-    justify-content: center;
     margin-top: 10px;
     /* Add some spacing between logo and icons */
   }
