@@ -512,9 +512,11 @@ footer {
 }
 
 .icon {
-  width: 20px; /* Adjust the size as needed */
+  width: 20px;
+  /* Adjust the size as needed */
   height: 20px;
-  margin: 0 10px; /* Add some spacing between icons */
+  margin: 0 10px;
+  /* Add some spacing between icons */
 }
 
 @media screen and (min-width: 768px) {
@@ -527,8 +529,10 @@ footer {
 
   .footer-column {
     flex: 1;
-    padding: 20px; /* Add padding */
-    border: 0.5px solid #2f306d; /* Add border */
+    padding: 20px;
+    /* Add padding */
+    border: 0.5px solid #2f306d;
+    /* Add border */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,13 +553,16 @@ footer {
   .icon-container {
     display: flex;
     justify-content: center;
-    margin-top: 10px; /* Add some spacing between logo and icons */
+    margin-top: 10px;
+    /* Add some spacing between logo and icons */
   }
 
   .icon {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
+    /* Adjust the size as needed */
     height: 30px;
-    margin: 0 5px; /* Add some spacing between icons */
+    margin: 0 5px;
+    /* Add some spacing between icons */
   }
 }
 
