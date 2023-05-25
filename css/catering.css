@@ -362,7 +362,7 @@ h3 {
 }
 .kontakt_button {
   width: 50%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 800px) {
   .grid_2-1 {
@@ -396,7 +396,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 40px;
   width: 80%;
   padding-left: 10%;
 }
@@ -406,7 +406,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 
