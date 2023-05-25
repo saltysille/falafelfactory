@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galleri</title>
-    <link rel="stylesheet" href="css/galleri.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <title>Kontakt</title>
 </head>
 
 <body>
+
     <header>
         <div class="logo">
 
@@ -30,32 +31,50 @@
                 <div class="line"></div>
             </div>
         </nav>
-    </header>
 
+
+    </header>
     <main>
-        <h1>Galleri</h1>
-        <div class="img_galleri">
-            <img src="images/galleri/galleri.webp" alt="galleri_collage">
+        <h1>Kontakt</h1>
+        <div class="grid_1">
+            <p>Nørrebrogade 63, 2200</p>
+            <p>+45 52 40 63 63</p>
+            <p>info@falafelfactory.dk</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.921882911215!2d12.552093040551986!3d55.690345873173264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253abcc375e01%3A0x74c7ea9ddbc18ba2!2sFalafel%20Factory!5e0!3m2!1sda!2sdk!4v1685002346669!5m2!1sda!2sdk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
-        <div class="grid_1-1">
-            <img src="images/galleri/1.webp" alt="billede 1">
-            <img src="images/galleri/2 (1).webp" alt="billede 2">
-        </div>
-        <div class="grid_1-1">
-            <img src="images/galleri/3.webp" alt="billede 3">
-            <img src="images/galleri/4.webp" alt="billede 4">
-        </div>
-        <div class="grid_1-1">
-            <img src="images/galleri/5.webp" alt="billede 5">
-            <img src="images/galleri/6.webp" alt="billede 6">
-        </div>
-        <div class="grid_1-1">
-            <img src="images/galleri/7.webp" alt="billede 7">
-            <img src="images/galleri/8.webp" alt="billede 8">
+        <h1>Kontakt os</h1>
+        <div class="grid_1">
+            <div class="grid_1">
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="fornavn">Fornavn*</label>
+                            <input type="text" id="fnavn" name="user_name1">
+                        </li>
+                        <li>
+                            <label for="efternavn">Efternavn*</label>
+                            <input type="text" id="enavn" name="user_name2">
+                        </li>
+                        <li>
+                            <label for="mail">Email*</label>
+                            <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="msg">Besked*</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </div>
     </main>
-
-
     <footer>
         <div class="footer-content">
             <div class="footer-column">
