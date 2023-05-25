@@ -227,7 +227,7 @@ footer {
   height: 200px;
   margin: 0 auto;
   position: absolute;
-  top: -3rem;
+  top: 2rem;
   left: 0rem;
 }
 
@@ -292,6 +292,10 @@ h3 {
   }
   .logo img {
     width: 181%;
+  }
+
+  .logo {
+    top: -3rem
   }
 }
 
@@ -420,4 +424,4 @@ h3 {
       margin: 120px 100px; /* Adjust the margin as needed */
     }
   }
-}
+
