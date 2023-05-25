@@ -80,7 +80,7 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-  margin-left: 5rem;
+
 }
 
 .burger .line {
@@ -121,6 +121,9 @@ nav {
 
   .burger {
     display: block;
+    z-index: 20;
+    margin-left: -4rem;
+    
   }
 
   .burger.active .line:nth-child(1) {
@@ -341,6 +344,7 @@ footer {
   background-color: #d2e5c6;
   color: #000;
   padding: 20px;
+  
 }
 
 .footer-content {
@@ -348,7 +352,13 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column-reverse;
 }
+
+.footer-content :nth-child(1) { order: 1; }
+        .footer-content :nth-child(2) { order: 3; }
+        .footer-content :nth-child(3) { order: 2; }
+        
 
 .logo_2 {
   width: 100px;
@@ -356,8 +366,22 @@ footer {
   margin: 0 auto;
 }
 
+
+
 .footer-column p {
   margin: 1rem;
+  text-align: center;
+}
+
+.footer-column .logo_2 {
+  align-items: center;
+  display: flex;
+}
+
+.footer-column a {
+  justify-content: center;
+  display: flex;
+  
 }
 
 .icon {
@@ -368,29 +392,57 @@ footer {
   /* Add some spacing between icons */
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+
+  .heading_footer{
+    padding-top:97px;
+
+  }
+
+  .contact_p{
+    padding-bottom: 97px;
+  }
+
+  .heading_openinghour{
+    padding-top:121px;
+  }
+
+  .contact_openinghour{
+    padding-bottom:121px;
+  }
+
   .footer-content {
     max-width: 1800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
   }
+
 
   .footer-column {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
     padding: 20px;
     /* Add padding */
     border: 0.5px solid #2f306d;
-    /* Add border */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
+  
   }
+
+  .footer-content :nth-child(1) { order: 1; }
+        .footer-content :nth-child(2) { order: 2; }
+        .footer-content :nth-child(3) { order: 3; }
+        
+
 
   .footer-column p {
     margin: 0;
+   
   }
 
   .logo_2 {
