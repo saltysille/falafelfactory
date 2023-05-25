@@ -36,6 +36,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  padding-left: 300px;
 }
 
 .menu {
@@ -86,6 +87,11 @@ nav {
 .burger {
   display: none;
 }
+.button_header {
+  display: flex;
+  scale: 0.5;
+}
+
 @media screen and (max-width: 800px) {
   header {
     display: flex;
@@ -141,8 +147,9 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
-
-  
+  .button_header {
+    display: none;
+  }
 }
 
 /* Footer */
@@ -260,8 +267,6 @@ footer {
     max-width: 65%;
     padding-left: 180px;
   }
-
- 
 }
 
 /* Images */
@@ -312,10 +317,8 @@ h1 {
   .logo img {
     width: 181%;
   }
-  
-  .logo{
+
+  .logo {
     top: -3rem;
-
   }
-
 }
