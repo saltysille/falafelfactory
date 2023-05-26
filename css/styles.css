@@ -95,7 +95,7 @@ nav {
 
 .button_header {
   display: flex;
-  scale: 0.7;
+  scale: 0.8;
 }
 
 @media screen and (max-width: 800px) {
@@ -466,14 +466,35 @@ nav {
     margin-bottom: 4rem;
   }
 
-  .wrapper4 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  .container {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  
+  .image-wrapper {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+  }
+  .image-wrapper:first-child {
+    margin-right: 50px;
+  }
+  .image-wrapper img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .image-text {
+    margin-top: 10px;
+    white-space: pre-line;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  .container::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
   }
 
   .box-2 {
