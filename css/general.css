@@ -17,27 +17,6 @@ p {
   src: url("../svg/Now-Regular.woff") format("woff");
 }
 
-/* tekst */
-h1 {
-  z-index: 2;
-  text-align: center;
-  color: #2f306d;
-  text-transform: uppercase;
-  font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-@media screen and (min-width: 800px) {
-  .h1 {
-    font-size: 77px;
-    color: #2f306d;
-    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  .tagline_frontpage {
-    width: 50%;
-  }
-}
-
 /* Navbar */
 
 header {
@@ -172,60 +151,6 @@ nav {
     display: none;
   }
 }
-/* grid_1 */
-.grid_1 {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
-  justify-content: center;
-}
-/*grid 1 p'er*/
-.grid_1tekst {
-  justify-self: center;
-  margin-top: 6%;
-  margin-bottom: 3%;
-}
-
-.kontaktosform {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
-  justify-content: center;
-  margin-bottom: 5%;
-}
-
-/* form grid */
-.grid_1form {
-  margin-top: 22%;
-}
-.formnavne {
-  display: grid;
-  grid-template-rows: auto;
-  grid-auto-columns: 1fr 1fr;
-}
-.fornavn {
-  margin-right: 260px;
-  width: 90%;
-}
-.efternavn {
-  margin-left: 46px;
-  width: 90%;
-}
-.kontaktostekst {
-  margin-top: 150px;
-  margin-bottom: 45px;
-}
-
-/* form */
-.form-group {
-  margin-top: 20px;
-  margin-bottom: 27px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
 
 /* Footer */
 
@@ -299,7 +224,8 @@ footer {
     margin: 0 5px; /* Add some spacing between icons */
   }
 }
-/* img */
+/* Images */
+
 .logo img {
   width: 100%;
   margin-left: 2rem;
@@ -314,59 +240,70 @@ footer {
   left: 0rem;
 }
 
-@media screen and (min-width: 768px) {
+.img_frontpage {
+  align-self: stretch;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+/* Headings */
+
+h1 {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2f306d;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+h2 {
+  text-align: center;
+  color: #2f306d;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h3 {
+  font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2f306d;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .h1 {
+    font-size: 77px;
+    color: #2f306d;
+    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  h2 {
+    text-align: left;
+    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h3 {
+    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #2f306d;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .tagline_frontpage {
+    width: 50%;
+  }
   .logo img {
     width: 181%;
   }
 
   .logo {
     top: -1rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .grid_1 {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  /* form */
-  .form-group {
-    margin-top: 20px;
-    margin-bottom: 27px;
-    margin-left: 12px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .bigger-label {
-    padding: 40px;
-    border-radius: 25px;
-    width: 90%;
-  }
-
-  .navnegrid {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  iframe {
-    width: auto;
-    height: 160%;
-  }
-}
-@media (max-width: 800px) {
-  .grid_1form {
-    margin-top: 22%;
-  }
-  .kontaktostekst {
-    margin-top: 150px;
-    margin-bottom: 45px;
   }
 }

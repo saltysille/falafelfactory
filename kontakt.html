@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/general.css">
     <title>Kontakt</title>
 </head>
 
@@ -38,41 +39,47 @@
     <main>
         <h1>Kontakt</h1>
         <div class="grid_1">
-            <p>Nørrebrogade 63, 2200</p>
-            <p>+45 52 40 63 63</p>
-            <p>info@falafelfactory.dk</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.921882911215!2d12.552093040551986!3d55.690345873173264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253abcc375e01%3A0x74c7ea9ddbc18ba2!2sFalafel%20Factory!5e0!3m2!1sda!2sdk!4v1685002346669!5m2!1sda!2sdk"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            <div class="grid_1tekst">
+                <p>Nørrebrogade 63, 2200</p>
+                <p>+45 52 40 63 63</p>
+                <p>info@falafelfactory.dk</p>
+            </div>
+            <iframe title="kort"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.921882911215!2d12.552093040551986!3d55.690345873173264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253abcc375e01%3A0x74c7ea9ddbc18ba2!2sFalafel%20Factory!5e0!3m2!1sda!2sdk!4v1685029732086!5m2!1sda!2sdk"
+                width="950" height="450" style="border:0;" allowfullscreen="" loading=""
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         </div>
-        <h1>Kontakt os</h1>
-        <div class="grid_1">
-            <div class="grid_1">
-                <form action="/my-handling-form-page" method="post">
-                    <ul>
-                        <li>
-                            <label for="fornavn">Fornavn*</label>
-                            <input type="text" id="fnavn" name="user_name1">
-                        </li>
-                        <li>
-                            <label for="efternavn">Efternavn*</label>
-                            <input type="text" id="enavn" name="user_name2">
-                        </li>
-                        <li>
-                            <label for="mail">Email*</label>
-                            <input type="email" id="mail" name="user_email">
-                        </li>
-                        <li>
-                            <label for="msg">Besked*</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                        <li class="button">
-                            <button type="submit">Send</button>
-                        </li>
-                    </ul>
-                </form>
+        <div class="kontaktosform">
+            <h1 class="kontaktostekst">Kontakt os</h1>
+            <div>
+                <div class="grid-container">
+                    <form>
+                        <div class="navnegrid">
+                            <div class="form-group fornavn">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" placeholder="Fornavn*" required>
+                            </div>
+                            <div class="form-group efternavn">
+                                <label for="name"></label>
+                                <input type="text" id="name2" name="name2" placeholder="Efternavn*" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"></label>
+                            <textarea id="message" class="bigger-label" name="Besked" placeholder="Besked"
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+
+                </div>
+
             </div>
         </div>
     </main>

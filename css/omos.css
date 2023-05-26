@@ -509,48 +509,65 @@ footer {
 
 /* Headers */
 
-.h1 {
-  margin-left: 516px;
-  margin-top: 12px;
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #2f306d;
+    text-transform: uppercase;
+    margin-bottom: 34;
 }
 
 h2 {
-  color: #db405d;
+    color: #DB405D;
+    margin-bottom: 4%;
+    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Tekst */
 
-.præg {
-  margin-left: 43%;
-  position: relative;
-  margin-top: -36%;
-  margin-bottom: 12%;
+.prag {
+    margin-left: 43%;
+    position: relative;
+    margin-top: -36%;
+    margin-bottom: 12%;
 }
 
-.vision {
-  position: relative;
-  margin-bottom: 4%;
+.text {
+    padding-left: 11%;
+    padding-top: 3%;
 }
 
-.vision-mission-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4%;
+.text1 {
+    margin-bottom: 4%;
 }
 
-.vision,
-.mission {
-  flex-basis: 50%;
-  position: relative;
+.text2 {
+    margin-bottom: 4%;
 }
+
+.text3 {
+    margin-bottom: 4%;
+}
+
+
+/* Images */
 
 .vision img,
 .mission img {
-  width: 11%;
-  height: auto;
+    width: 24%;
+    height: auto;
+    padding-left: 40%;
 }
 
-@media screen and (max-width: 800px) {
+/* Grid */
+
+.grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 /* line */
@@ -584,4 +601,63 @@ h2 {
     margin: 120px 100px;
     /* Adjust the margin as needed */
   }
+}
+
+@media screen and (min-width: 800px) {
+    .line-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .horizontal-line {
+        width: 80%;
+        /* Adjust the width of the line as needed */
+        border: none;
+        border-top: 1px solid#2f306d;
+        /* Adjust the line color and thickness as needed */
+        margin: 35px 100px;
+        /* Adjust the margin as needed */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 5%;
+    }
+
+    h1 {
+        font-size: xx-large;
+        margin-top: 100px;
+    }
+
+    .bror {
+        width: 81%;
+    }
+
+    .prag {
+        margin-top: 9%;
+        margin-left: 5%;
+    }
+
+    .line-container {
+        margin-top: -20%;
+    }
+
+    .grid-1_1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: -10%;
+
+    }
+
+    .vision {
+        margin-top: -10;
+    }
+
+    .vision img,
+    .mission img {
+        width: 35%;
+
+    }
+
 }
