@@ -74,7 +74,7 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-  margin-left: 5rem;
+
 }
 
 .burger .line {
@@ -86,10 +86,6 @@ nav {
 
 .burger {
   display: none;
-}
-.button_header {
-  display: flex;
-  scale: 0.5;
 }
 
 @media screen and (max-width: 800px) {
@@ -115,6 +111,9 @@ nav {
 
   .burger {
     display: block;
+    z-index: 20;
+    margin-left: -4rem;
+    
   }
 
   .burger.active .line:nth-child(1) {
@@ -147,10 +146,9 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
-  .button_header {
-    display: none;
-  }
 }
+
+
 
 /* Footer */
 
@@ -165,7 +163,13 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column-reverse;
 }
+
+.footer-content :nth-child(1) { order: 1; }
+        .footer-content :nth-child(2) { order: 3; }
+        .footer-content :nth-child(3) { order: 2; }
+        
 
 .logo_2 {
   width: 100px;
@@ -173,37 +177,107 @@ footer {
   margin: 0 auto;
 }
 
+.footer-column{
+  margin-top: 2rem;
+}
+
 .footer-column p {
   margin: 1rem;
+  text-align: center;
+}
+
+.footer-column .logo_2 {
+  align-items: center;
+  display: flex;
+}
+
+.footer-column a {
+  justify-content: center;
+  display: flex;
+  
 }
 
 .icon {
-  width: 20px; /* Adjust the size as needed */
+  width: 20px;
+  /* Adjust the size as needed */
   height: 20px;
-  margin: 0 10px; /* Add some spacing between icons */
+  margin: 0 10px;
+  /* Add some spacing between icons */
 }
 
-@media screen and (min-width: 800px) {
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid#2f306d;
+  margin: 120px 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .heading_footer{
+    padding-top:97px;
+    margin-top: 0;
+
+  }
+
+  .contact_p{
+    padding-bottom: 97px;
+  }
+
+  .heading_openinghour{
+    padding-top:121px;
+    margin-top: 0;
+  }
+
+  .contact_openinghour{
+    padding-bottom:121px;
+  }
+
   .footer-content {
     max-width: 1800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
   }
+
 
   .footer-column {
     flex: 1;
-    padding: 20px; /* Add padding */
-    border: 0.5px solid #2f306d; /* Add border */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     line-height: 1.5;
+    padding: 20px;
+    /* Add padding */
+    border: 0.5px solid #2f306d;
+    margin-top: 0;
+  
   }
+
+  .footer-content :nth-child(1) { order: 1; }
+        .footer-content :nth-child(2) { order: 2; }
+        .footer-content :nth-child(3) { order: 3; }
+        
+
 
   .footer-column p {
     margin: 0;
+   
   }
 
   .logo_2 {
@@ -213,15 +287,16 @@ footer {
   }
 
   .icon-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Add some spacing between logo and icons */
+    margin-top: 10px;
+    /* Add some spacing between logo and icons */
   }
 
   .icon {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
+    /* Adjust the size as needed */
     height: 30px;
-    margin: 0 5px; /* Add some spacing between icons */
+    margin: 0 5px;
+    /* Add some spacing between icons */
   }
 }
 /* Images */
@@ -250,7 +325,7 @@ footer {
 
 h1 {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 3rem;
   font-size: 4rem;
   font-weight: 500;
   font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -284,8 +359,8 @@ h3 {
     text-align: left;
     font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     line-height: 1.6;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
@@ -306,4 +381,32 @@ h3 {
   .logo {
     top: -1rem;
   }
+}
+
+/* Button */
+
+.button_header {
+  display: none;
+}
+
+.button_header_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+.button_header {
+  display: flex;
+  scale: 0.8;
+}
+
+.button_header_2{
+display: none;
+}
+
 }

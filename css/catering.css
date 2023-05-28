@@ -106,7 +106,7 @@
   justify-content: center;
 }
 .horizontal-line {
-  width: 100%; /* Adjust the width of the line as needed */
+  width: 80%; /* Adjust the width of the line as needed */
   border: none;
   border-top: 1px solid#2f306d; /* Adjust the line color and thickness as needed */
   margin: 120px 10px; /* Adjust the margin as needed */
@@ -120,6 +120,6 @@
     width: 80%; /* Adjust the width of the line as needed */
     border: none;
     border-top: 1px solid#2f306d; /* Adjust the line color and thickness as needed */
-    margin: 120px 100px; /* Adjust the margin as needed */
+    margin: 120px 800px; /* Adjust the margin as needed */
   }
 }

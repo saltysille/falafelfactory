@@ -5,142 +5,96 @@
   grid-template-columns: auto;
   justify-content: center;
 }
-/* forms */
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-  /* Form outline */
-  padding: 1em;
-  border-radius: 2em;
+/*grid 1 p'er*/
+.grid_1tekst {
+  justify-self: center;
+  margin-top: 6%;
+  margin-bottom: 3%;
 }
 
-ul {
-  list-style: none;
-  padding: 20;
-  margin: 0;
+.kontaktosform {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
-form li + li {
-  margin-top: 1em;
+/* form grid */
+.grid_1form {
+  margin-top: 22%;
+}
+.formnavne {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr 1fr;
+}
+.fornavn {
+  margin-right: 260px;
+  width: 90%;
+}
+.efternavn {
+  margin-left: 46px;
+  width: 90%;
+}
+.kontaktostekst {
+  margin-top: 150px;
+  margin-bottom: 45px;
+}
+
+/* form */
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 27px;
 }
 
 label {
-  /* Uniform size & alignment */
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 55px;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+.bigger-label {
+  padding: 40px;
+  border-radius: 25px;
+  width: 96%;
+}
+
+input[type="submit"] {
+  background-color: #db405d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  width: 60px;
-  text-align: right;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
 }
-
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
-
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
+.navnegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
-input:focus,
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 0.5em;
-}
-
-/* Footer */
-
-footer {
-  background-color: #d2e5c6;
-  color: #000;
-  padding: 20px;
-}
-
-.footer-content {
-  max-width: 200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.logo_2 {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.footer-column p {
-  margin: 1rem;
-}
-
-.icon {
-  width: 20px; /* Adjust the size as needed */
-  height: 20px;
-  margin: 0 10px; /* Add some spacing between icons */
-}
-
-@media screen and (min-width: 800px) {
-  .footer-content {
-    max-width: 1800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer-column {
-    flex: 1;
-    padding: 20px; /* Add padding */
-    border: 0.5px solid #2f306d; /* Add border */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
-  }
-
-  .footer-column p {
-    margin: 0;
-  }
-
-  .logo_2 {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-  }
-
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Add some spacing between logo and icons */
-  }
-
-  .icon {
-    width: 30px; /* Adjust the size as needed */
-    height: 30px;
-    margin: 0 5px; /* Add some spacing between icons */
-  }
-}
-
 /* img */
 .logo img {
   width: 100%;
@@ -163,5 +117,52 @@ footer {
 
   .logo {
     top: -1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid_1 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 800px) {
+  /* form */
+  .form-group {
+    margin-top: 26px;
+    margin-bottom: 24px;
+    margin-left: -33px;
+    width: 101%;
+    justify-content: center;
+  }
+
+  .bigger-label {
+    padding: 40px;
+    border-radius: 25px;
+    width: 90%;
+  }
+
+  .navnegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  iframe {
+    width: auto;
+    height: 160%;
+  }
+}
+@media (max-width: 800px) {
+  .grid_1form {
+    margin-top: 22%;
+  }
+  .kontaktostekst {
+    margin-top: 150px;
+    margin-bottom: 45px;
   }
 }
