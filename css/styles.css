@@ -284,6 +284,14 @@ nav {
   font-size: 0.6rem;
 }
 
+.p_menu_2{
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 0.6rem;
+}
+
 .p_menu_small {
   display: flex;
   justify-content: center;
