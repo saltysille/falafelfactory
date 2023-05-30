@@ -123,7 +123,7 @@ input[type="submit"] {
   left: 0rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .logo img {
     width: 181%;
   }
@@ -133,7 +133,7 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .grid_1 {
     display: grid;
     grid-template-rows: auto;
