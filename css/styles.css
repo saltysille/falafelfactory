@@ -265,6 +265,7 @@ nav {
     margin-bottom: 1rem;
     margin-top: 3rem;
     margin-left: 4rem;
+    font-size: 3rem;
   }
 
   .heading_drink {
@@ -367,6 +368,21 @@ nav {
   .img_menu {
     margin-top: 0;
   }
+}
+
+/* Link */
+
+.link_instagram a:link{
+  color: #2f306d;
+}
+
+.link_instagram a:visited{
+  color: #2f306d;
+}
+
+.link_instagram a:hover{
+ color: #db405d;
+ cursor: pointer;
 }
 
 /* Grids */
