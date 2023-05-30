@@ -27,18 +27,21 @@
   height: auto;
 }
 
+
 @media screen and (min-width: 800px) {
   .grid_1-1 {
     display: flex;
-    justify-content: center;
     gap: 30px;
     padding-top: 30px;
+    max-width: 60%;
+    padding-left: 140px;
   }
 
   .img_galleri {
     display: flex;
-    justify-content: center;
     padding-bottom: 20px;
+    max-width: 65%;
+    padding-left: 180px;
   }
 }
 
