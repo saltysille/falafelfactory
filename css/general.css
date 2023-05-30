@@ -74,7 +74,6 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-
 }
 
 .burger .line {
@@ -113,7 +112,6 @@ nav {
     display: block;
     z-index: 20;
     margin-left: -13rem;
-    
   }
 
   .burger.active .line:nth-child(1) {
@@ -148,8 +146,6 @@ nav {
   }
 }
 
-
-
 /* Footer */
 
 footer {
@@ -166,10 +162,15 @@ footer {
   flex-direction: column-reverse;
 }
 
-.footer-content :nth-child(1) { order: 1; }
-        .footer-content :nth-child(2) { order: 3; }
-        .footer-content :nth-child(3) { order: 2; }
-        
+.footer-content :nth-child(1) {
+  order: 1;
+}
+.footer-content :nth-child(2) {
+  order: 3;
+}
+.footer-content :nth-child(3) {
+  order: 2;
+}
 
 .logo_2 {
   width: 100px;
@@ -177,7 +178,7 @@ footer {
   margin: 0 auto;
 }
 
-.footer-column{
+.footer-column {
   margin-top: 2rem;
 }
 
@@ -194,7 +195,6 @@ footer {
 .footer-column a {
   justify-content: center;
   display: flex;
-  
 }
 
 .icon {
@@ -223,26 +223,23 @@ footer {
   margin: 120px 10px;
 }
 
-
 @media screen and (min-width: 768px) {
-
-  .heading_footer{
-    padding-top:97px;
+  .heading_footer {
+    padding-top: 97px;
     margin-top: 0;
-
   }
 
-  .contact_p{
+  .contact_p {
     padding-bottom: 97px;
   }
 
-  .heading_openinghour{
-    padding-top:121px;
+  .heading_openinghour {
+    padding-top: 121px;
     margin-top: 0;
   }
 
-  .contact_openinghour{
-    padding-bottom:121px;
+  .contact_openinghour {
+    padding-bottom: 121px;
   }
 
   .footer-content {
@@ -252,9 +249,7 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    
   }
-
 
   .footer-column {
     flex: 1;
@@ -266,18 +261,20 @@ footer {
     /* Add padding */
     border: 0.5px solid #2f306d;
     margin-top: 0;
-  
   }
 
-  .footer-content :nth-child(1) { order: 1; }
-        .footer-content :nth-child(2) { order: 2; }
-        .footer-content :nth-child(3) { order: 3; }
-        
-
+  .footer-content :nth-child(1) {
+    order: 1;
+  }
+  .footer-content :nth-child(2) {
+    order: 2;
+  }
+  .footer-content :nth-child(3) {
+    order: 3;
+  }
 
   .footer-column p {
     margin: 0;
-   
   }
 
   .logo_2 {
@@ -396,17 +393,13 @@ h3 {
   margin-top: 7rem;
 }
 
-
-
 @media screen and (min-width: 800px) {
+  .button_header {
+    display: flex;
+    scale: 0.8;
+  }
 
-.button_header {
-  display: flex;
-  scale: 0.8;
-}
-
-.button_header_2{
-display: none;
-}
-
+  .button_header_2 {
+    display: none;
+  }
 }
