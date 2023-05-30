@@ -40,6 +40,15 @@
 .kontaktostekst {
   margin-top: 150px;
   margin-bottom: 45px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .kontaktostekst {
+    text-align: center;
+    font-size: 4rem;
+  }
 }
 
 /* form */
@@ -94,7 +103,11 @@ input[type="submit"] {
 .navnegrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+ 
 }
+
+
+
 /* img */
 .logo img {
   width: 100%;
@@ -166,3 +179,14 @@ input[type="submit"] {
     margin-bottom: 45px;
   }
 }
+
+.grid-container{
+  margin: 0 5rem;
+}
+
+@media (min-width: 800px) {
+  .grid-container{
+    margin: 0;
+  }
+}
+
