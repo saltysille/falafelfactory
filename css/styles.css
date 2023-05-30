@@ -122,7 +122,7 @@ nav {
   .burger {
     display: block;
     z-index: 20;
-    margin-left: -13rem;
+    margin-left: -10rem;
     
   }
 
@@ -202,7 +202,7 @@ nav {
 
 .h1_frontpage {
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   text-transform: uppercase;
   margin-left: -8rem;
@@ -211,7 +211,7 @@ nav {
 }
 
 .h1_norrebro{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 300;
     z-index: 2;
     color: #fff;
@@ -265,6 +265,7 @@ nav {
     margin-bottom: 1rem;
     margin-top: 3rem;
     margin-left: 4rem;
+    font-size: 3rem;
   }
 
   .heading_drink {
@@ -367,6 +368,21 @@ nav {
   .img_menu {
     margin-top: 0;
   }
+}
+
+/* Link */
+
+.link_instagram a:link{
+  color: #2f306d;
+}
+
+.link_instagram a:visited{
+  color: #2f306d;
+}
+
+.link_instagram a:hover{
+ color: #db405d;
+ cursor: pointer;
 }
 
 /* Grids */
