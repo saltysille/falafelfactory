@@ -79,7 +79,6 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-
 }
 
 .burger .line {
@@ -123,7 +122,6 @@ nav {
     display: block;
     z-index: 20;
     margin-left: -10rem;
-    
   }
 
   .burger.active .line:nth-child(1) {
@@ -178,7 +176,6 @@ nav {
 .heading_menu {
   display: flex;
   justify-content: center;
-  
 }
 
 .heading_pita {
@@ -210,16 +207,15 @@ nav {
   font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.h1_norrebro{
-    font-size: 0.8rem;
-    font-weight: 300;
-    z-index: 2;
-    color: #fff;
-    margin-top: 1rem;
-    margin-left: -8rem;
-    margin-bottom: 0;
-    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
+.h1_norrebro {
+  font-size: 0.8rem;
+  font-weight: 300;
+  z-index: 2;
+  color: #fff;
+  margin-top: 1rem;
+  margin-left: -8rem;
+  margin-bottom: 0;
+  font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .h2_frontpage {
@@ -236,7 +232,7 @@ nav {
     margin-top: 0;
   }
 
-  .h1_norrebro{
+  .h1_norrebro {
     font-size: 2rem;
     margin-top: 0;
   }
@@ -261,7 +257,6 @@ nav {
   }
 
   .heading_pita {
-    
     margin-bottom: 1rem;
     margin-top: 3rem;
     margin-left: 4rem;
@@ -372,17 +367,17 @@ nav {
 
 /* Link */
 
-.link_instagram a:link{
+.link_instagram a:link {
   color: #2f306d;
 }
 
-.link_instagram a:visited{
+.link_instagram a:visited {
   color: #2f306d;
 }
 
-.link_instagram a:hover{
- color: #db405d;
- cursor: pointer;
+.link_instagram a:hover {
+  color: #db405d;
+  cursor: pointer;
 }
 
 /* Grids */
@@ -390,7 +385,6 @@ nav {
 .wrapper {
   display: grid;
   place-items: center;
-  
 }
 
 .wrapper2 {
@@ -398,10 +392,7 @@ nav {
   grid-gap: 1rem;
   margin-left: 7rem;
   margin-right: 7rem;
- 
-} 
-
-
+}
 
 .box-1 {
   display: grid;
@@ -420,9 +411,6 @@ nav {
   grid-row-end: 7;
   z-index: 1;
 }
-
-
-
 
 .box-4 {
   grid-column-start: 1;
@@ -500,8 +488,6 @@ nav {
     margin-bottom: 4rem;
   }
 
-  
-
   .box-2 {
     display: grid;
     grid-column-start: 2;
@@ -544,7 +530,6 @@ nav {
   }
 }
 
-
 /* Footer */
 
 footer {
@@ -561,10 +546,15 @@ footer {
   flex-direction: column-reverse;
 }
 
-.footer-content :nth-child(1) { order: 1; }
-        .footer-content :nth-child(2) { order: 3; }
-        .footer-content :nth-child(3) { order: 2; }
-        
+.footer-content :nth-child(1) {
+  order: 1;
+}
+.footer-content :nth-child(2) {
+  order: 3;
+}
+.footer-content :nth-child(3) {
+  order: 2;
+}
 
 .logo_2 {
   width: 100px;
@@ -572,7 +562,7 @@ footer {
   margin: 0 auto;
 }
 
-.footer-column{
+.footer-column {
   margin-top: 2rem;
 }
 
@@ -589,7 +579,6 @@ footer {
 .footer-column a {
   justify-content: center;
   display: flex;
-  
 }
 
 .icon {
@@ -618,26 +607,23 @@ footer {
   margin: 120px 10px;
 }
 
-
 @media screen and (min-width: 768px) {
-
-  .heading_footer{
-    padding-top:97px;
+  .heading_footer {
+    padding-top: 97px;
     margin-top: 0;
-
   }
 
-  .contact_p{
+  .contact_p {
     padding-bottom: 97px;
   }
 
-  .heading_openinghour{
-    padding-top:121px;
+  .heading_openinghour {
+    padding-top: 121px;
     margin-top: 0;
   }
 
-  .contact_openinghour{
-    padding-bottom:121px;
+  .contact_openinghour {
+    padding-bottom: 121px;
   }
 
   .footer-content {
@@ -647,9 +633,7 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    
   }
-
 
   .footer-column {
     flex: 1;
@@ -661,18 +645,20 @@ footer {
     /* Add padding */
     border: 0.5px solid #2f306d;
     margin-top: 0;
-  
   }
 
-  .footer-content :nth-child(1) { order: 1; }
-        .footer-content :nth-child(2) { order: 2; }
-        .footer-content :nth-child(3) { order: 3; }
-        
-
+  .footer-content :nth-child(1) {
+    order: 1;
+  }
+  .footer-content :nth-child(2) {
+    order: 2;
+  }
+  .footer-content :nth-child(3) {
+    order: 3;
+  }
 
   .footer-column p {
     margin: 0;
-   
   }
 
   .logo_2 {
@@ -709,4 +695,12 @@ footer {
     margin-left: 7rem;
     margin-left: -8rem;
   }
+}
+
+.insta_link {
+  border-radius: 25px;
+  border: 2px solid #db405d;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
 }
