@@ -79,7 +79,7 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
-  margin-left: 5rem;
+
 }
 
 .burger .line {
@@ -92,9 +92,10 @@ nav {
 .burger {
   display: none;
 }
+
 .button_header {
   display: flex;
-  scale: 0.5;
+  scale: 0.8;
 }
 
 @media screen and (max-width: 800px) {
@@ -120,6 +121,9 @@ nav {
 
   .burger {
     display: block;
+    z-index: 20;
+    margin-left: -4rem;
+    
   }
 
   .burger.active .line:nth-child(1) {
@@ -161,7 +165,8 @@ nav {
 
 .heading_menu_first {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 500;
   font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -173,10 +178,11 @@ nav {
 .heading_menu {
   display: flex;
   justify-content: center;
-  margin-top: 4.5rem;
+  
 }
 
 .heading_pita {
+  margin-left: 2rem;
   color: #2f306d;
   text-transform: uppercase;
   font-size: 2rem;
@@ -196,10 +202,24 @@ nav {
 
 .h1_frontpage {
   z-index: 2;
+  font-size: 1.5rem;
   color: #fff;
   text-transform: uppercase;
   margin-left: -8rem;
+  margin-top: 0;
   font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.h1_norrebro{
+    font-size: 1rem;
+    font-weight: 300;
+    z-index: 2;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: -8rem;
+    margin-bottom: 0;
+    font-family: "now", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
 }
 
 .h2_frontpage {
@@ -213,6 +233,12 @@ nav {
 @media screen and (min-width: 768px) {
   .h1_frontpage {
     font-size: 77px;
+    margin-top: 0;
+  }
+
+  .h1_norrebro{
+    font-size: 2rem;
+    margin-top: 0;
   }
 
   .h2_frontpage {
@@ -225,12 +251,20 @@ nav {
     font-size: 2rem;
   }
 
+  .heading_menu_first {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+
   .tagline_frontpage {
     width: 50%;
   }
 
   .heading_pita {
-    font-size: 3rem;
+    
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
   }
 
   .heading_drink {
@@ -292,7 +326,7 @@ nav {
 
 .img_menu {
   align-self: stretch;
-  width: 70%;
+  width: 300px;
   display: block;
   margin: 2rem auto;
   margin-top: 5rem;
@@ -316,12 +350,13 @@ nav {
     height: 200px;
     margin: 0 auto;
     position: absolute;
-    top: -3rem;
+    top: -1rem;
     left: 0rem;
   }
 
   .img_frontpage {
     margin-bottom: 5rem;
+    width: 100%;
   }
 
   .img_menu_1 {
@@ -339,6 +374,7 @@ nav {
 .wrapper {
   display: grid;
   place-items: center;
+  
 }
 
 .wrapper2 {
@@ -346,7 +382,10 @@ nav {
   grid-gap: 1rem;
   margin-left: 7rem;
   margin-right: 7rem;
-}
+ 
+} 
+
+
 
 .box-1 {
   display: grid;
@@ -365,6 +404,9 @@ nav {
   grid-row-end: 7;
   z-index: 1;
 }
+
+
+
 
 .box-4 {
   grid-column-start: 1;
@@ -394,6 +436,38 @@ nav {
   grid-row-end: 1;
 }
 
+.container {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.image-wrapper {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+.image-wrapper:first-child {
+  margin-right: 50px;
+}
+.image-wrapper img {
+  width: 300px;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.image-text {
+  margin-top: 10px;
+  white-space: pre-line;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.container::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
     display: grid;
@@ -410,21 +484,13 @@ nav {
     margin-bottom: 4rem;
   }
 
-  .wrapper4 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
+  
 
   .box-2 {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 5;
+    grid-row-start: 3;
     grid-row-end: 7;
     z-index: 1;
   }
@@ -462,6 +528,7 @@ nav {
   }
 }
 
+
 /* Footer */
 
 footer {
@@ -475,7 +542,13 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column-reverse;
 }
+
+.footer-content :nth-child(1) { order: 1; }
+        .footer-content :nth-child(2) { order: 3; }
+        .footer-content :nth-child(3) { order: 2; }
+        
 
 .logo_2 {
   width: 100px;
@@ -483,8 +556,24 @@ footer {
   margin: 0 auto;
 }
 
+.footer-column{
+  margin-top: 2rem;
+}
+
 .footer-column p {
   margin: 1rem;
+  text-align: center;
+}
+
+.footer-column .logo_2 {
+  align-items: center;
+  display: flex;
+}
+
+.footer-column a {
+  justify-content: center;
+  display: flex;
+  
 }
 
 .icon {
@@ -495,29 +584,79 @@ footer {
   /* Add some spacing between icons */
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid#2f306d;
+  margin: 120px 10px;
+}
+
+
 @media screen and (min-width: 768px) {
+
+  .heading_footer{
+    padding-top:97px;
+    margin-top: 0;
+
+  }
+
+  .contact_p{
+    padding-bottom: 97px;
+  }
+
+  .heading_openinghour{
+    padding-top:121px;
+    margin-top: 0;
+  }
+
+  .contact_openinghour{
+    padding-bottom:121px;
+  }
+
   .footer-content {
     max-width: 1800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
   }
+
 
   .footer-column {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
     padding: 20px;
     /* Add padding */
     border: 0.5px solid #2f306d;
-    /* Add border */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5;
+    margin-top: 0;
+  
   }
+
+  .footer-content :nth-child(1) { order: 1; }
+        .footer-content :nth-child(2) { order: 2; }
+        .footer-content :nth-child(3) { order: 3; }
+        
+
 
   .footer-column p {
     margin: 0;
+   
   }
 
   .logo_2 {
@@ -527,8 +666,6 @@ footer {
   }
 
   .icon-container {
-    display: flex;
-    justify-content: center;
     margin-top: 10px;
     /* Add some spacing between logo and icons */
   }
