@@ -252,10 +252,6 @@ nav {
     margin-bottom: 0;
   }
 
-  .tagline_frontpage {
-    width: 50%;
-  }
-
   .heading_pita {
     margin-bottom: 1rem;
     margin-top: 3rem;
@@ -284,7 +280,7 @@ nav {
   font-size: 0.6rem;
 }
 
-.p_menu_2{
+.p_menu_2 {
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -706,9 +702,25 @@ footer {
 }
 
 .insta_link {
-  border-radius: 25px;
+  border-radius: 20px;
   border: 2px solid #db405d;
-  padding: 10px;
-  width: 200px;
-  height: 150px;
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+}
+.tagline_frontpage {
+  line-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .insta_link {
+    border-radius: 25px;
+    border: 2px solid #db405d;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+  }
+  .tagline_frontpage {
+    width: 50%;
+  }
 }
